@@ -29,8 +29,8 @@ public:
                 {
                     results.push_back({rStart, cStart});
                 }
-                rStart++;
 
+                rStart++;
                 cnt--;
             }
             step++;
@@ -42,8 +42,8 @@ public:
                 {
                     results.push_back({rStart, cStart});
                 }
-                cStart--;
 
+                cStart--;
                 cnt--;
             }
             // 上
@@ -54,8 +54,8 @@ public:
                 {
                     results.push_back({rStart, cStart});
                 }
+                
                 rStart--;
-
                 cnt--;
             }
             step++;
