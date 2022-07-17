@@ -5,7 +5,7 @@ class Solution {
 public:
     vector<vector<int>> spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
         vector<vector<int>> results;
-        int cnt = rows * cols, step = 1, t = 0;
+        int step = 1, t = 0;
 
         while (results.size() < rows * cols)
         {
@@ -54,7 +54,7 @@ public:
                 {
                     results.push_back({rStart, cStart});
                 }
-                
+
                 rStart--;
                 cnt--;
             }
