@@ -10,6 +10,7 @@ public:
         while (results.size() < rows * cols)
         {
             // 右
+            // 注意!!!!   每次循环次数=步数+1
             for (int i = 0; i < step; i++)
             {
                 // 判断
@@ -19,7 +20,6 @@ public:
                 }
 
                 cStart++;
-                cnt--;
             }
             // 下
             for (int i = 0; i < step; i++)
@@ -31,7 +31,6 @@ public:
                 }
 
                 rStart++;
-                cnt--;
             }
             step++;
             // 左
@@ -44,7 +43,6 @@ public:
                 }
 
                 cStart--;
-                cnt--;
             }
             // 上
             for (int i = 0; i < step; i++)
@@ -54,9 +52,8 @@ public:
                 {
                     results.push_back({rStart, cStart});
                 }
-
+                
                 rStart--;
-                cnt--;
             }
             step++;
         }
