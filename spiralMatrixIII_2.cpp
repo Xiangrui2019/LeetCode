@@ -10,7 +10,7 @@ public:
         while (results.size() < rows * cols)
         {
             // 右
-            // 注意!!!!   每次循环次数=步数+1
+            // [0, i) 为已经输出的
             for (int i = 0; i < step; i++)
             {
                 // 判断
